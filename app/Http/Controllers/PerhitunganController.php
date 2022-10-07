@@ -9,7 +9,8 @@ class PerhitunganController extends Controller
 {
     public function index()
     {
-        $rumusSPKMautAlgorithms = new SPKMautAlgorithms();
-        $rumusSPKMautAlgorithms->GenerateDataPenilaian();
+        dd('Sintha Cantikssss');
+        // $rumusSPKMautAlgorithms = new SPKMautAlgorithms();
+        // $rumusSPKMautAlgorithms->GenerateDataPenilaian();
     }
 }
