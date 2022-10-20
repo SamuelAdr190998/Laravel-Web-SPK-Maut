@@ -15,12 +15,13 @@ class CreateDataPenilaianTable extends Migration
     {
         Schema::create('data_penilaian', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_alternatif')->constrained('data_alternatif')
+            $table->foreignId('id_alternatif')->constrained('data_alternatif', 'id')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
-            $table->foreignId('id_sub_kriteria')->constrained('data_sub_kriteria')
+            $table->foreignId('id_kriteria')->constrained('data_kriteria', 'id')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
+            $table->longText('kode_sub_kriteria_array');
             $table->timestamps();
         });
     }

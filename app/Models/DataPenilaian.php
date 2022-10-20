@@ -9,6 +9,17 @@ class DataPenilaian extends Model
     protected $table = 'data_penilaian';
     protected $fillable = [
         'id_alternatif',
-        'id_sub_kriteria'
+        'id_kriteria',
+        'kode_sub_kriteria_array'
     ];
+
+    public function alternatif()
+    {
+        return $this->hasOne(DataAlternatif::class, 'id', 'id_alternatif');
+    }
+
+    public function kriteria()
+    {
+        return $this->hasOne(DataKriteria::class, 'id', 'id_kriteria');
+    }
 }

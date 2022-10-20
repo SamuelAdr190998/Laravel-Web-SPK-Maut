@@ -17,6 +17,7 @@ class DataAlternatifSeeder extends Seeder
     {
         DB::table('data_alternatif')->insert([
             [
+                'kode_alternatif' => 'A1',
                 'nama_kos' => 'Kos A',
                 'link_kos' => 'https://www.google.com/',
                 'pemilik_kos' => 'Ahmad Zainuddin',
@@ -27,6 +28,7 @@ class DataAlternatifSeeder extends Seeder
                 'updated_at' => Carbon::now()
             ],
             [
+                'kode_alternatif' => 'A2',
                 'nama_kos' => 'Kos B',
                 'link_kos' => 'https://www.google.com/',
                 'pemilik_kos' => 'Putra Zainuddin',
@@ -37,6 +39,7 @@ class DataAlternatifSeeder extends Seeder
                 'updated_at' => Carbon::now()
             ],
             [
+                'kode_alternatif' => 'A3',
                 'nama_kos' => 'Kos C',
                 'link_kos' => 'https://www.google.com/',
                 'pemilik_kos' => 'Samsul Zainuddin',
@@ -47,6 +50,7 @@ class DataAlternatifSeeder extends Seeder
                 'updated_at' => Carbon::now()
             ],
             [
+                'kode_alternatif' => 'A4',
                 'nama_kos' => 'Kos D',
                 'link_kos' => 'https://www.google.com/',
                 'pemilik_kos' => 'Budi Zainuddin',
@@ -57,6 +61,7 @@ class DataAlternatifSeeder extends Seeder
                 'updated_at' => Carbon::now()
             ],
             [
+                'kode_alternatif' => 'A5',
                 'nama_kos' => 'Kos E',
                 'link_kos' => 'https://www.google.com/',
                 'pemilik_kos' => 'Kamis Zainuddin',

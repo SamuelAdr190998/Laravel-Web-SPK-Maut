@@ -15,6 +15,7 @@ class CreateDataAlternatifTable extends Migration
     {
         Schema::create('data_alternatif', function (Blueprint $table) {
             $table->id();
+            $table->string('kode_alternatif');
             $table->string('nama_kos');
             $table->string('link_kos');
             $table->string('pemilik_kos');

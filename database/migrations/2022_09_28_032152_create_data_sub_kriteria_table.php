@@ -18,8 +18,8 @@ class CreateDataSubKriteriaTable extends Migration
             $table->foreignId('id_kriteria')->constrained('data_kriteria', 'id')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
+            $table->string('kode_sub_kriteria');
             $table->string('nama_sub_kriteria');
-            $table->double('bobot_sub_kriteria')->nullable();
             $table->timestamps();
         });
     }

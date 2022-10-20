@@ -17,52 +17,121 @@ class DataPenilaianSeeder extends Seeder
         DB::table('data_penilaian')->insert([
             [
                 'id_alternatif' => 1,
-                'id_sub_kriteria' => 1
+                'id_kriteria' => 1,
+                'kode_sub_kriteria_array' => json_encode([
+                    'SB1',
+                    'SB2',
+                    'SB3',
+                    'SB4'
+                ])
             ],
             [
                 'id_alternatif' => 1,
-                'id_sub_kriteria' => 2
+                'id_kriteria' => 2,
+                'kode_sub_kriteria_array' => json_encode([
+                    'SB6',
+                    'SB7',
+                    'SB8',
+                    'SB9',
+                    'SB10'
+                ])
             ],
             [
                 'id_alternatif' => 1,
-                'id_sub_kriteria' => 3
+                'id_kriteria' => 3,
+                'kode_sub_kriteria_array' => json_encode([
+                    'SB17',
+                    'SB18',
+                    'SB20'
+                ])
             ],
             [
                 'id_alternatif' => 1,
-                'id_sub_kriteria' => 6
+                'id_kriteria' => 4,
+                'kode_sub_kriteria_array' => json_encode([
+                    'SB22',
+                    'SB23',
+                    'SB24',
+                    'SB25'
+                ])
             ],
             [
                 'id_alternatif' => 1,
-                'id_sub_kriteria' => 7
+                'id_kriteria' => 5,
+                'kode_sub_kriteria_array' => json_encode([
+                    'SB26',
+                    'SB27',
+                    'SB28',
+                    'SB29'
+                ])
             ],
             [
                 'id_alternatif' => 1,
-                'id_sub_kriteria' => 8
+                'id_kriteria' => 6,
+                'kode_sub_kriteria_array' => json_encode([
+                    'SB31',
+                    'SB32',
+                    'SB33'
+                ])
             ],
             [
-                'id_alternatif' => 1,
-                'id_sub_kriteria' => 15
+                'id_alternatif' => 2,
+                'id_kriteria' => 1,
+                'kode_sub_kriteria_array' => json_encode([
+                    'SB1',
+                    'SB2',
+                    'SB3'
+                ])
             ],
             [
-                'id_alternatif' => 1,
-                'id_sub_kriteria' => 16
+                'id_alternatif' => 2,
+                'id_kriteria' => 2,
+                'kode_sub_kriteria_array' => json_encode([
+                    'SB6',
+                    'SB7',
+                    'SB8',
+                    'SB9'
+                ])
             ],
             [
-                'id_alternatif' => 1,
-                'id_sub_kriteria' => 17
+                'id_alternatif' => 2,
+                'id_kriteria' => 3,
+                'kode_sub_kriteria_array' => json_encode([
+                    'SB15',
+                    'SB16',
+                    'SB17',
+                    'SB18',
+                    'SB19'
+                ])
             ],
             [
-                'id_alternatif' => 1,
-                'id_sub_kriteria' => 22
+                'id_alternatif' => 2,
+                'id_kriteria' => 4,
+                'kode_sub_kriteria_array' => json_encode([
+                    'SB22',
+                    'SB23',
+                    'SB24',
+                    'SB25'
+                ])
             ],
             [
-                'id_alternatif' => 1,
-                'id_sub_kriteria' => 26
+                'id_alternatif' => 2,
+                'id_kriteria' => 5,
+                'kode_sub_kriteria_array' => json_encode([
+                    'SB26',
+                    'SB27',
+                    'SB28'
+                ])
             ],
             [
-                'id_alternatif' => 1,
-                'id_sub_kriteria' => 31
-            ]
+                'id_alternatif' => 2,
+                'id_kriteria' => 6,
+                'kode_sub_kriteria_array' => json_encode([
+                    'SB31',
+                    'SB32',
+                    'SB33'
+                ])
+            ],
         ]);
     }
 }

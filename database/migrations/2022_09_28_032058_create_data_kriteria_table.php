@@ -15,6 +15,7 @@ class CreateDataKriteriaTable extends Migration
     {
         Schema::create('data_kriteria', function (Blueprint $table) {
             $table->id();
+            $table->string('kode_kriteria');
             $table->string('nama_kriteria');
             $table->double('bobot_kriteria');
             $table->timestamps();

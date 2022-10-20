@@ -8,6 +8,7 @@ class DataKriteria extends Model
 {
     protected $table = 'data_kriteria';
     protected $fillable = [
+        'kode_kriteria',
         'nama_kriteria',
         'bobot_kriteria'
     ];
